@@ -1,0 +1,89 @@
+<header id="header" data-current-skin={{mactrl.currentSkin}} data-ng-include src="'template/header-image-logo.html'" data-ng-controller="headerCtrl as hctrl"></header>
+<section id="main">
+    <div class="container">
+        <div class="block-header">
+            <h2>New Blog</h2>
+            <p>Title, description, image, creator / author and tags that can be built by field below will be generated automatically.</p>
+        </div>
+        <div class="card">
+            <div class="card-body card-padding">
+
+                <div class="form-group fg-float m-b-30 fg-toggled">
+                    <div class="fg-line">
+                        <input type="text" class="form-control fg-input" ng-model.title>
+                        <label class="fg-label">Title</label>
+                    </div>
+                </div>
+
+                <div class="form-group fg-float m-b-30">
+                    <div class="fg-line">
+                        <input type="text" class="form-control fg-input" ng-model.subTitle>
+                        <label class="fg-label">Sub Title</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="fg-line">
+                        <textarea class="form-control" data-auto-size placeholder="Add blog body text here..." ng-model="blog.bodyText"></textarea>
+                    </div>
+                </div>
+                <div class="form-group fg-float m-b-30">
+                    <div class="fg-line">
+                        <input type="text" class="form-control fg-input" ng-model.metaDescription>
+                        <label class="fg-label">Meta Description</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group fg-float m-b-30">
+                            <div class="fg-line">
+                                <input type="text" class="form-control fg-input" ng-model.metaTag1>
+                                <label class="fg-label">Meta Tag 1</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <div class="fg-line">
+                                <div class="select">
+                                    <select class="form-control">
+                                        <option>Select an Option</option>
+                                        <option>type</option>
+                                        <option>section</option>
+                                        <option>tag</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group fg-float m-b-30">
+                            <div class="fg-line">
+                                <input type="text" class="form-control fg-input" ng-model.metaTag2>
+                                <label class="fg-label">Meta Tag 2</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <div class="fg-line">
+                                <div class="select">
+                                    <select class="form-control">
+                                        <option>Select an Option</option>
+                                        <option>type</option>
+                                        <option>section</option>
+                                        <option>tag</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <button type="submit" class="btn btn-primary btn-sm m-t-5">Add Articlezzzz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

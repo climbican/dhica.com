@@ -1,0 +1,77 @@
+<header id="header" data-current-skin={{mactrl.currentSkin}} data-ng-include src="'template/header-image-logo.html'" data-ng-controller="headerCtrl as hctrl"></header>
+
+<section id="main">
+    <section id="content">
+        <div class="card">
+            <div class="listview lv-bordered lv-lg">
+                <div class="lv-header-alt clearfix">
+                    <h2 class="lvh-label hidden-xs">Check the blogs to remove</h2>
+                    <ul class="lv-actions actions">
+                        <li class="dropdown" uib-dropdown>
+                            <a href="" uib-dropdown-toggle aria-expanded="true">
+                                <i class="zmdi zmdi-more-vert"></i>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <a href="">Remove checked</a>
+                                </li>
+                                <li>
+                                    <a href="">Archive checked</a>
+                                </li>
+                                <li><a href="#">Add New</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lv-body">
+
+
+<!--repeater section-->
+                    <div class="lv-item media">
+                        <div class="checkbox pull-left">
+                            <label>
+                                <input type="checkbox" value="">
+                                <i class="input-helper"></i>
+                            </label>
+                        </div>
+                        <div class="media-body">
+                            <div class="lv-title">Per an error perpetua, fierent fastidii recteque ad pro. Mei id brute intellegam</div>
+                            <ul class="lv-attrs">
+                                <li>Date Created: 09/06/1988</li>
+                                <li>Members: 78954</li>
+                                <li>Published: No</li>
+                            </ul>
+
+                            <div class="lv-actions actions dropdown" uib-dropdown>
+                                <a href="" uib-dropdown-toggle aria-expanded="true">
+                                    <i class="zmdi zmdi-more-vert"></i>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                        <a href="">Edit</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="lv-pagination" data-ng-controller="PaginationDemoCtrl">
+                <uib-pagination total-items="totalItems" ng-model="currentPage" ng-change="pageChanged()"></uib-pagination>
+            </div>
+        </div>
+    </section>
+
+</section>
+
+<footer id="footer" data-ng-include src="'template/footer.html'"></footer>
+
+

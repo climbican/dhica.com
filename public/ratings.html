@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div itemscope="" itemtype=" http://schema.org/HomeAndConstructionBusiness ">
+    <section class="reviewsModule" id="affReviewsModule">
+        <div class="container">
+            <header class="sectionHeader">
+                <p>Recent Reviews</p>
+                <h2>What Our Customers Are Saying</h2>
+            </header>
+            <div class="reviewOverall">
+                <span itemprop="name">Overall Customer Rating</span>
+                <div itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" class="aggregateRating">
+                    <div class="rating">
+                        <div class="stars"><span style="width: 92.60272%"></span></div>
+                        <span class="score"><span itemprop="ratingValue">4.6</span> / 5.0 based on <span itemprop="reviewCount">219</span> reviews</span>
+                    </div>
+                </div>
+            </div>
+            <div id="affiliateReviews">
+                <ul class="reviews">
+                    <li>
+                        <blockquote itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                            <div class="rating">
+                                <div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+                                    <div class="stars"><span style="width: 100%"></span></div>
+                                    <meta itemprop="worstRating" content="1"><span itemprop="ratingValue"><span class="score">5</span></span>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div>
+                                    <header>
+                                        <meta itemprop="datePublished" content="2016-07-21"><time datetime="2016-07-21">July 21, 2016</time>
+                                    </header>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                            <div class="rating">
+                                <div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+                                    <div class="stars"><span style="width: 100%"></span></div>
+                                    <meta itemprop="worstRating" content="1"><span itemprop="ratingValue"><span class="score">5</span></span>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div>
+                                    <header>
+                                        <meta itemprop="datePublished" content="2016-06-16"><time datetime="2016-06-16">June 16, 2016</time>
+                                    </header>
+                                    <p class="short"><span itemprop="description">Best window product on the market!
+All the staff at Andersen were the best.</span></p>
+                                    <!--<a href="#">Read more</a>-->
+                                </div>
+                            </div>
+                        </blockquote>
+                    </li>
+                </ul>
+                <div class="paginatorNumbered">
+                    <ul>
+                        <li class="paginatorNumberedPrevious paginatorDisabled"><a><span>Previous</span></a></li><li class="paginatorNumberedNumber paginatorNumberedCurrent hide-small"><a><span>1</span></a></li><li class="paginatorNumberedNumber"><a href="http://www.renewalbyandersen.com/window-company/757-san-diego.aspx?p=2&amp;sid=757&amp;ps=10"><span>2</span></a></li><li class="paginatorNumberedNumber"><a href="http://www.renewalbyandersen.com/window-company/757-san-diego.aspx?p=3&amp;sid=757&amp;ps=10"><span>3</span></a></li><li class="paginatorNumberedNext"><a href="http://www.renewalbyandersen.com/window-company/757-san-diego.aspx?p=2&amp;sid=757&amp;ps=10"><span>Next</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section itemscope="" itemtype="http://schema.org/HomeAndConstructionBusiness">
+        <div class="clients-area center wow fadeInDown">
+            <header class="sectionHeader">
+                <p>Recent Reviews</p>
+                <h2>What Our Customers Are Saying</h2>
+            </header>
+            <p class="lead">Please ask us about our wonderful Customer Referral Reward Program. But first, check out some of the many glowing customer testimonials we've received.</p>
+        </div>
+        <div class="reviewOverall">
+            <span itemprop="name">Overall Customer Rating</span>
+            <div itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" class="aggregateRating">
+                <div class="rating">
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i></div>
+                    <span class="score"><span itemprop="ratingValue">4.7</span> / 5.0 based on <span itemprop="reviewCount">173</span> reviews</span>
+                </div>
+            </div>
+        </div>
+        <!-- this is the template for the customer reviews -->
+        @if($num_rows > 0)
+        @foreach ($reviews as $r)
+        <div itemprop="review" itemscope="" itemtype="http://schema.org/Review" class="row wow fadeInDown">
+            <div class="col-sm-2">&nbsp;</div>
+            <div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating" class="col-sm-2">
+                <img itemprop=”image” src="{{$pre}}images/logo_house.png" alt="distinctive logo" style="height:160px;"/>
+                <meta itemprop="worstRating" content="3.5"><span itemprop="ratingValue"><span class="score">5</span></span>
+                <div itemProp="reviewerName" class="center" style="font-style:italic; color:#696969;">{{$r->reviewer_name}}</div>
+            </div>
+            <div class="col-sm-6">
+                <blockquote><span class="review_stars">
+                    @for($i=0; $i< $r->stars; $i++)
+                                    <i class="fa fa-star"></i>
+                                @endfor
+                </span>
+                    <i>&nbsp;{{$r->body_text}}</i>
+                    <meta itemprop="datePublished" content="{{date('Y-M-d',substr($r->last_update,0,10) )}}">
+                    <footer><time datetime="{{date('Y-M-d',substr($r->last_update,0,10) )}}"> -- {{date('d M Y',substr($r->last_update,0,10) )}}</time></footer>
+                </blockquote>
+            </div>
+        </div>
+        @endforeach
+
+        @endif
+        <!-- End customer review -->
+    </section>
+
+
+
+
+</div>
+</body>
+</html>
