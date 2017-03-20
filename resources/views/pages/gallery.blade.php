@@ -125,15 +125,15 @@
                 </div><!--/.portfolio-item-->
                 <div class="portfolio-item windowsDoors col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
-                        <img class="img-responsive" src="{{url('images/portfolio/recent/window-replacement-with-bars.jpg')}}" alt="Replacement windows and doors">
+                        <img class="img-responsive" src="{{url('images/portfolio/recent/frontdoorwindows-290.jpg')}}" alt="energy efficient windows">
                         <div class="overlay">
                             <div class="recent-work-inner">
-                                <h3 style="color:#ffffff;">Windows &#38; Doors</h3>
-                                <a class="preview" href="{{url('images/portfolio/full/window-replacement-with-bars.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                <h3 style="color:#ffffff;">Windows </h3>
+                                <a class="preview" href="{{url('images/portfolio/full/front-door-full.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View</a>
                             </div>
                         </div>
                     </div>
-                </div><!--/.portfolio-item-->
+                </div>
 
                 <div class="portfolio-item windowsDoors col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
@@ -248,6 +248,53 @@
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
+                <div class="portfolio-item turf col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="{{url('images/portfolio/recent/syn-lawn-1-290.jpg')}}" alt="Synthetic lawn San Diego">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3 style="color:#ffffff;">Turf</h3>
+                                <a class="preview" href="{{url('images/portfolio/full/syn-lawn-1-ba-full.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item turf col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="{{url('images/portfolio/recent/syn-lawn-2-290.jpg')}}" alt="Synthetic Lawn San Diego">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3 style="color:#ffffff;">Turf</h3>
+                                <a class="preview" href="{{url('images/portfolio/full/syn-lawn-2-ba.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item texCote col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="{{url('images/portfolio/recent/exterior-1-290.jpg')}}" alt="Exterior Coating">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3 style="color:#ffffff;">Exterior Coating</h3>
+                                <a class="preview" href="{{url('images/portfolio/full/exterior-1-ba.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item windowsDoors col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="{{url('images/portfolio/recent/windows2-290.jpg')}}" alt="Replacement Windows">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3 style="color:#ffffff;">Windows</h3>
+                                <a class="preview" href="{{url('images/portfolio/full/windows-10-ba-full.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -95,11 +95,11 @@
 
             <div class="col-xs-12 col-sm-4 col-md-3">
                 <div class="recent-work-wrap">
-                    <img class="img-responsive" src="{{url('images/portfolio/recent/window-replacement-with-bars.jpg')}}" alt="energy efficient windows">
+                    <img class="img-responsive" src="{{url('images/portfolio/recent/frontdoorwindows-290.jpg')}}" alt="energy efficient windows">
                     <div class="overlay">
                         <div class="recent-work-inner">
                             <h3 style="color:#ffffff;">Windows </h3>
-                            <a class="preview" href="{{url('images/portfolio/full/window-replacement-with-bars.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View</a>
+                            <a class="preview" href="{{url('images/portfolio/full/front-door-full.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View</a>
                         </div>
                     </div>
                 </div>
@@ -164,6 +164,55 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="recent-work-wrap">
+                    <img class="img-responsive" src="{{url('images/portfolio/recent/syn-lawn-1-290.jpg')}}" alt="Synthetic lawn San Diego">
+                    <div class="overlay">
+                        <div class="recent-work-inner">
+                            <h3 style="color:#ffffff;">Turf</h3>
+                            <a class="preview" href="{{url('images/portfolio/full/syn-lawn-1-ba-full.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="recent-work-wrap">
+                    <img class="img-responsive" src="{{url('images/portfolio/recent/syn-lawn-2-290.jpg')}}" alt="Synthetic Lawn San Diego">
+                    <div class="overlay">
+                        <div class="recent-work-inner">
+                            <h3 style="color:#ffffff;">Turf</h3>
+                            <a class="preview" href="{{url('images/portfolio/full/syn-lawn-2-ba.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="recent-work-wrap">
+                    <img class="img-responsive" src="{{url('images/portfolio/recent/exterior-1-290.jpg')}}" alt="Exterior Coating">
+                    <div class="overlay">
+                        <div class="recent-work-inner">
+                            <h3 style="color:#ffffff;">Exterior Coating</h3>
+                            <a class="preview" href="{{url('images/portfolio/full/exterior-1-ba.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="recent-work-wrap">
+                    <img class="img-responsive" src="{{url('images/portfolio/recent/windows2-290.jpg')}}" alt="Replacement Windows">
+                    <div class="overlay">
+                        <div class="recent-work-inner">
+                            <h3 style="color:#ffffff;">Windows</h3>
+                            <a class="preview" href="{{url('images/portfolio/full/windows-10-ba-full.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div><!--/.row-->
     </div><!--/.container-->
 </section>
@@ -382,17 +431,17 @@
                 <div style="float:left; width:22%;">
                     <span>
                         <a href="https://www.yelp.com/biz/distinctive-home-improvements-san-diego" style="text-decoration:none; color:#000;">
-                            <img src="{{url('images/partners/yelp-logo-large@2x.png')}}" height="60px" alt="none">
+                        <img src="{{url('images/partners/yelp-logo-large@2x.png')}}" height="60px" alt="none">
                         </a>
-                    </span>
-                    <span>
+                        </span>
+                                            <span>
                         <div>Total ratings:  {{$yelp_review->review_count }}</div>
                         <div>Average Rating: {{$yelp_review->rating }}</div>
                     </span>
                 </div>
                 <div style="float:right; width:78%;">
                     <a href="https://www.yelp.com/biz/distinctive-home-improvements-san-diego" style="text-decoration:none; color:#000;">
-                        <div class="yelp_person_image" style="float:left; width:29%;">
+                        <div class="yelp_person_image">
                             <img src="{{$yelp_review->snippet_image_url }}"/>
                         </div>
                         <div style="float:right; width:70%;">
@@ -404,7 +453,8 @@
                 </div>
             </div>
             <div class="col-md-2">&nbsp;</div>
-        </div><!-- END YELP REVIEW -->
+        </div>
+        <!-- END YELP REVIEW -->
 
         <div class="row" style="margin-top:15px;">
             <div class="col-md-2">&nbsp;</div>
@@ -426,7 +476,6 @@
             </div>
             <div class="col-md-2">&nbsp;</div>
         </div>
-
         <div class="row">
             <div class="col-xs-12">
                 &nbsp;
