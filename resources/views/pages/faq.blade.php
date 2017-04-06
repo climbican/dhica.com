@@ -100,7 +100,7 @@
                 </a>
             </div>
         </div><!-- / Content container -->
-        <div class="get-started center wow fadeInDown">
+        <div class="get-started text-center wow fadeInDown">
             <h2>Ready to get started</h2>
             <p class="lead">CALL TODAY FOR YOUR FREE 30 POINT ENERGY EVALUATION OR PROJECT ESTIMATE</p>
             <div class="request">

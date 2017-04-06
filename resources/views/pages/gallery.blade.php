@@ -34,7 +34,7 @@
                 </div><!--/.portfolio-item-->
                 <div class="portfolio-item turf col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
-                        <img class="img-responsive" src="{{url('images/portfolio/recent/turf2-before-after.jpg')}}" alt="Syn-lawn before and after">
+                        <img class="img-responsive" src="{{url('images/portfolio/recent/turf-2.jpg')}}" alt="Syn-lawn before and after">
                         <div class="overlay">
                             <div class="recent-work-inner">
                                 <h3 style="color:#ffffff;">Syntethic Turf</h3>
@@ -77,11 +77,9 @@
                     </div>
                 </div><!--/.portfolio-item-->
 
-
-
                 <div class="portfolio-item turf col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
-                        <img class="img-responsive" src="{{url('images/portfolio/recent/turf3-before-after.jpg')}}" alt="">
+                        <img class="img-responsive" src="{{url('images/portfolio/recent/syn-lawn-2-290.jpg')}}" alt="">
                         <div class="overlay">
                             <div class="recent-work-inner">
                                 <h3 style="color:#ffffff;">Synthetic Turf</h3>
@@ -204,13 +202,13 @@
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
-                <div class="portfolio-item texCote col-xs-12 col-sm-4 col-md-3">
+                <div class="portfolio-item windowsDoors col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
-                        <img class="img-responsive" src="{{url('images/portfolio/recent/exterior-coating-290.jpg')}}" alt="Exterior coating, tex cote">
+                        <img class="img-responsive" src="{{url('images/portfolio/recent/exterior-1-290.jpg')}}" alt="Windows & Doors">
                         <div class="overlay">
                             <div class="recent-work-inner">
-                                <h3 style="color:#ffffff;">Exterior Coating</h3>
-                                <a class="preview" href="{{url('images/portfolio/full/exterior-coating-full.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                <h3 style="color:#ffffff;">Windows & Doors</h3>
+                                <a class="preview" href="{{url('images/portfolio/full/exterior-1-ba.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
                             </div>
                         </div>
                     </div>
@@ -226,24 +224,13 @@
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
-                <div class="portfolio-item roofing col-xs-12 col-sm-4 col-md-3">
+                <div class="portfolio-item windowsDoors col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
-                        <img class="img-responsive" src="{{url('images/portfolio/recent/roof-replacement-290.jpg')}}" alt="Residential roofing replacement">
+                        <img class="img-responsive" src="{{url('images/portfolio/recent/windows2-290.jpg')}}" alt="Replacement Windows">
                         <div class="overlay">
                             <div class="recent-work-inner">
-                                <h3 style="color:#ffffff;">Roofing</h3>
-                                <a class="preview" href="{{url('images/portfolio/full/roof-replacement-full.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-                <div class="portfolio-item texCote col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="{{url('images/portfolio/recent/exterior1-before-after.jpg')}}" alt="Exterior Coating, tex cote">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3 style="color:#ffffff;">Exterior Caoting</h3>
-                                <a class="preview" href="{{url('images/portfolio/full/exterior1-before-after-full.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                <h3 style="color:#ffffff;">Windows</h3>
+                                <a class="preview" href="{{url('images/portfolio/full/windows-10-ba-full.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
                             </div>
                         </div>
                     </div>
@@ -255,42 +242,6 @@
                             <div class="recent-work-inner">
                                 <h3 style="color:#ffffff;">Turf</h3>
                                 <a class="preview" href="{{url('images/portfolio/full/syn-lawn-1-ba-full.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item turf col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="{{url('images/portfolio/recent/syn-lawn-2-290.jpg')}}" alt="Synthetic Lawn San Diego">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3 style="color:#ffffff;">Turf</h3>
-                                <a class="preview" href="{{url('images/portfolio/full/syn-lawn-2-ba.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item texCote col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="{{url('images/portfolio/recent/exterior-1-290.jpg')}}" alt="Exterior Coating">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3 style="color:#ffffff;">Exterior Coating</h3>
-                                <a class="preview" href="{{url('images/portfolio/full/exterior-1-ba.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item windowsDoors col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="{{url('images/portfolio/recent/windows2-290.jpg')}}" alt="Replacement Windows">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3 style="color:#ffffff;">Windows</h3>
-                                <a class="preview" href="{{url('images/portfolio/full/windows-10-ba-full.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
                             </div>
                         </div>
                     </div>

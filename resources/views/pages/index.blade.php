@@ -11,7 +11,7 @@
                 <h2 class="margin-10px-xs animation animated-item-1" style="color:#fff;"> Vinyl Windows &#38; Doors </h2>
                 <h4 class="margin-bottom-1 lh-1-5 animation animated-item-2"> 30 Point Energy Evauluation and Savings </h4>
                 <h4 class="magin-bottom-1 hl-l-5 animation animated-item-3">CALL (619) 857 - 8388</h4>
-                <button class="btn btn-lg btn-danger animation animated-item-4" onclick="window.location.href='https://codecanyon.net/item/solid-responsive-mega-menus/11342043'"> Read More </button>
+                <button class="btn btn-lg btn-danger animation animated-item-4" onclick="window.location.href='{{url('replacement-windows')}}'"> Read More </button>
             </div>
             <img src="{{url('images/slider/windows.jpg')}}" alt="image" class="img-responsive">
         </div>
@@ -21,7 +21,7 @@
                 <h2 class="margin-10px-xs animation animated-item-1" style="color:#fff;"> Exterior Coating </h2>
                 <h4 class="margin-bottom-1 animation animated-item-2"> By TEX-COTE: a leader in exterior coatings for 55 years. </h4>
                 <h4 class="margin-bottom-1 animation animated-item-3">CALL (619) 857 - 8388</h4>
-                <button class="btn btn-lg btn-danger animation animated-item-4" onclick="window.location.href='https://codecanyon.net/item/solid-responsive-mega-menus/11342043'"> Read More </button>
+                <button class="btn btn-lg btn-danger animation animated-item-4" onclick="window.location.href='{{url('replacement-patio-doors')}}'"> Read More </button>
             </div>
             <img src="{{url('images/slider/exteriorcoating.jpg')}}" alt="image" class="img-responsive">
         </div>
@@ -31,7 +31,7 @@
                 <h2 class="margin-10px-xs animation animated-item-1" style="color:#fff;"> Solar Installations </h2>
                 <h4 class="margin-bottom-1 animation animated-item-2"> Save more money with our most efficient solar panels </h4>
                 <h4 class="margin-bottom-1 animation animated-item-3"> CALL (619) 857 - 8388</h4>
-                <button class="btn btn-lg btn-danger animation animated-item-3" onclick="window.location.href='https://codecanyon.net/item/solid-responsive-mega-menus/11342043'"> Read More </button>
+                <button class="btn btn-lg btn-danger animation animated-item-3" onclick="window.location.href='{{url('solar-installation')}}'"> Read More </button>
             </div>
             <img src="{{url('images/slider/solar.jpg')}}" alt="image" class="img-responsive">
         </div>
@@ -41,7 +41,7 @@
                 <h2 class="margin-10px-xs animation animated-item-1" style="color:#fff;"> Synthetic Lawn </h2>
                 <h4 class="margin-bottom-1 animation animated-item-2"> No watering or mowing necessary... </h4>
                 <h4 class="margin-bottom-1 animation animated-item-3"> CALL (619) 857 - 8388</h4>
-                <button class="btn btn-lg btn-danger animation animated-item-4" onclick="window.location.href='https://codecanyon.net/item/solid-responsive-mega-menus/11342043'"> Read More </button>
+                <button class="btn btn-lg btn-danger animation animated-item-4" onclick="window.location.href='{{url('syn-turf')}}'"> Read More </button>
             </div>
             <img src="{{url('images/slider/syn-lawn.jpg')}}" alt="image" class="img-responsive">
         </div>
@@ -191,10 +191,10 @@
 
             <div class="col-xs-12 col-sm-4 col-md-3">
                 <div class="recent-work-wrap">
-                    <img class="img-responsive" src="{{url('images/portfolio/recent/exterior-1-290.jpg')}}" alt="Exterior Coating">
+                    <img class="img-responsive" src="{{url('images/portfolio/recent/exterior-1-290.jpg')}}" alt="Windows & Doors">
                     <div class="overlay">
                         <div class="recent-work-inner">
-                            <h3 style="color:#ffffff;">Exterior Coating</h3>
+                            <h3 style="color:#ffffff;">Windows</h3>
                             <a class="preview" href="{{url('images/portfolio/full/exterior-1-ba.jpg')}}" rel="prettyPhoto"><i class="icon icon-eye"></i> View before / after</a>
                         </div>
                     </div>
@@ -430,18 +430,18 @@
             <div class="col-md-8">
                 <div style="float:left; width:22%;">
                     <span>
-                        <a href="https://www.yelp.com/biz/distinctive-home-improvements-san-diego" style="text-decoration:none; color:#000;">
-                        <img src="{{url('images/partners/yelp-logo-large@2x.png')}}" height="60px" alt="none">
-                        </a>
-                        </span>
-                                            <span>
-                        <div>Total ratings:  {{$yelp_review->review_count }}</div>
-                        <div>Average Rating: {{$yelp_review->rating }}</div>
+                    <a href="https://www.yelp.com/biz/distinctive-home-improvements-san-diego" style="text-decoration:none; color:#000;">
+                    <img src="{{url('images/partners/yelp-logo-large@2x.png')}}" height="60px" alt="none">
+                    </a>
+                    </span>
+                                        <span>
+                    <div>Total ratings:  {{$yelp_review->review_count }}</div>
+                    <div>Average Rating: {{$yelp_review->rating }}</div>
                     </span>
                 </div>
                 <div style="float:right; width:78%;">
                     <a href="https://www.yelp.com/biz/distinctive-home-improvements-san-diego" style="text-decoration:none; color:#000;">
-                        <div class="yelp_person_image">
+                        <div class="yelp_person_image" style="float:left; width:29%;">
                             <img src="{{$yelp_review->snippet_image_url }}"/>
                         </div>
                         <div style="float:right; width:70%;">
