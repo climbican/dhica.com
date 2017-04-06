@@ -301,7 +301,7 @@ class SiteController extends Controller{
         $active['handyman'] = ' active';
         $page_title = 'DHICA &#124; Whole House Handyman Services; San Diego';
         $meta_description = 'Distinctive Home Improvements is proud to introduce comprehensive handyman services, from rewiring an outlet to remodeling a bathroom.';
-        $canonical = url('').'/handyman';
+        $canonical = url('handyman');
 
         return view('pages.handyman', compact('active', 'page_title', 'meta_description', 'canonical') );
     }

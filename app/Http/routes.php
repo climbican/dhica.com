@@ -75,7 +75,6 @@ Route::get('garden', 'SiteController@garden');
 Route::get('picture', 'SiteController@picture');
 Route::get('geo', 'SiteController@geo');
 
-
 /************  DOORS OPTION ROUTES   *******************/
 ///removed id used for anchor /{id}
 //MAIN ENTRY POINT FOR THE DOORS
@@ -84,7 +83,6 @@ Route::get('vinyl-sliding-patio-doors', 'SiteController@slidingPatio');
 Route::get('vinyl-swinging-french-doors', 'SiteController@swingingFrench');
 Route::get('vinyl-sliding-french-doors', 'SiteController@slidingFrench');
 Route::get('viny-sliding-pet-doors', 'SiteController@slidingPet');
-
 
 Route::get('handyman', 'SiteController@handyman');
 
