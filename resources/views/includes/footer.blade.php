@@ -14,10 +14,10 @@
                 <div class="widget">
                     <h3>Company</h3>
                     <ul>
-                        <li><a href="http://localhost/dhica.com/public/about">About us</a></li>
-                        <li><a href="http://localhost/dhica.com/public/hiring">We are hiring</a></li>
-                        <li><a href="http://localhost/dhica.com/public/privacy-policy">Privacy policy</a></li>
-                        <li><a href="http://localhost/dhica.com/public/contact">Contact us</a></li>
+                        <li><a href="{{url('about')}}">About us</a></li>
+                        <li><a href="{{url('hiring')}}">We are hiring</a></li>
+                        <li><a href="{{url('privacy-policy')}}">Privacy policy</a></li>
+                        <li><a href="{{url('contact')}}">Contact us</a></li>
                     </ul>
                 </div>
             </div><!--/.col-md-3-->
@@ -26,8 +26,8 @@
                 <div class="widget">
                     <h3>Support</h3>
                     <ul>
-                        <li><a href="http://localhost/dhica.com/public/faq">Faq</a></li>
-                        <li><a href="http://localhost/dhica.com/public/blog">Blog</a></li>
+                        <li><a href="{{url('faq')}}">Faq</a></li>
+                        <li><a href="https://blog.dhica.com">Blog</a></li>
                         <!--<li><a href="http://localhost/dhica.com/publicfederal_credits">Federal Tax Credits</a></li>-->
                     </ul>
                 </div>
@@ -60,18 +60,18 @@
             </div>
             <div class="col-sm-6">
                 <ul class="pull-right">
-                    <li><a href="https://dhica.com">Home</a></li>
-                    <li><a href="http://localhost/dhica.com/public/about">About Us</a></li>
-                    <li><a href="http://localhost/dhica.com/public/faq">Faq</a></li>
-                    <li><a href="http://localhost/dhica.com/public/testimonials">Testimonials</a></li>
-                    <li><a href="http://localhost/dhica.com/public/contact">Contact Us</a></li>
+                    <li><a href="{{url('')}}">Home</a></li>
+                    <li><a href="{{url('about')}}">About Us</a></li>
+                    <li><a href="{{url('faq')}}">Faq</a></li>
+                    <li><a href="{{url('testimonials')}}">Testimonials</a></li>
+                    <li><a href="{{url('contact')}}">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
 </footer><!--/#footer-->
-@if(isset($active['anchor']))
+@if(isset($active['anchor']) && $active['anchor'] !== '')
     <script> document.getElementById('{{$active['anchor']}}').scrollIntoView();</script>
 @endif
 <script>
@@ -84,8 +84,7 @@
     ga('send', 'pageview');
 
 </script>
-</body>
-<script src="{{url('plugin/jquery-1.11.1.min.js')}}" type="text/javascript"></script>
+
 <script src="{{url('plugin/bootstrap/bootstrap.min.js')}}" type="text/javascript"></script>
 <script src="{{url('plugin/jquery-easing/jquery.easing.js')}}" type="text/javascript"></script>
 <script src="{{url('plugin/owl-carousel/owl.carousel.js')}}" type="text/javascript"></script>
@@ -94,4 +93,5 @@
 <script src="{{url('js/solid-menu.js')}}" type="text/javascript"></script>
 <script src="{{url('js/main.js')}}" type="text/javascript"></script>
 <script src="{{url('js/jquery.prettyPhoto.js')}}"></script>
+
 </html>

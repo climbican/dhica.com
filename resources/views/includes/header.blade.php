@@ -67,6 +67,7 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+    <script src="{{url('plugin/jquery-1.11.1.min.js')}}" type="text/javascript"></script>
 
     <script type="application/ld+json">
         {
