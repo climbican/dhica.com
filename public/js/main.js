@@ -29,18 +29,26 @@ jQuery(function($) {'use strict',
 	});
 
 	// Contact form
-	var form = $('#main-contact-form');
+	var form = $('#scroll-contact-form');
 	form.submit(function(event){
 		event.preventDefault();
-		var form_status = $('<div class="form_status"></div>');
+		var form_status = $('#status_box'); //<div class="form_status"></div>
+        var form = $('form')[0]; // You need to use standard javascript object here
+        var formData = new FormData(form);
 		$.ajax({
 			url: $(this).attr('action'),
+			data:jQuery('#scroll-contact-form').serialize(),
+			method:'post',
 
 			beforeSend: function(){
-				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
+				 form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn();
 			}
 		}).done(function(data){
-			form_status.html('<p class="text-success">' + data.message + '</p>').delay(3000).fadeOut();
+			var dataOut = JSON.parse(data);
+			form_status.html('<p class="text-success">' + dataOut.message + '</p>').delay(4000).fadeOut();
+            jQuery(form).find("input[type=text], input[type=number], input[type=email], textarea").val("");
+
+            setTimeout(function(){closeBox(); /**script from the scrollerBox**/ }, 4050);
 		});
 	});
 
