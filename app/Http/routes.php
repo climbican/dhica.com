@@ -57,7 +57,8 @@ Route::get('quiet-cool', 'SiteController@quiet_cool');
 Route::get('syn-turf', 'SiteController@syn_lawn');
 
 Route::get('contact', 'SiteController@contact');
-Route::post('sendmail', 'mailController@sendTheEmail');
+Route::post('sendmail', 'mailController@sendTheEmail');  //this processes the main mail form on the contact page.
+Route::post('sendMailMini', 'mailController@miniMailForm');//this is for the mini follow scroll form on the pages.
 Route::get('contactThankYou', 'mailController@getThankYou');
 
 /***********  WINDOW OPTION ROUTES **********************/

@@ -125,15 +125,19 @@
         width:300px;
     }
 
-    .scrollingBox h3 {
-        margin: 0;
-        text-align: center;
+    .scrollingBox h4 {
+        margin-left: 40px;
+        margin-top: 5px;
+        vertical-align: middle;
         color: black;
-        size:.75em;
+        size:.4em;
     }
 
     .scrollingBox .overlay{
 
+    }
+    i:hover{
+        curser:pointer;
     }
     i:after{
         border:none;
@@ -145,7 +149,7 @@
 
 <div class="scrollingBox"><!-- style="border:1px dashed darkblue;" -->
     <div class="row"><span class="no-border" style="float:left;border:none;"><span onclick="closeBox()" style="background:transparent; border:none;"><i class="icon-line2-close icon-2x" style="color: #3F729B;margin-left:15px; margin-top:-5px;"></i></span></span>
-        <span style=" padding-left:70px; margin-top:75px;"><img src="{{url('images/logo.png')}}" alt="inside the scrolling box"></span>
+        <span style="float:left;"><h4>Request A Quote</h4></span>
     </div>
     <div class="row" style="width:345px; margin:5px; ">
         <div id="status_box" class="status alert alert-success" style="display:none;z-index:100;position:absolute;"></div>

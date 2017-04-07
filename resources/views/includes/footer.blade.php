@@ -84,7 +84,7 @@
     ga('send', 'pageview');
 
 </script>
-
+<script src="{{url('plugin/jquery-1.11.1.min.js')}}" type="text/javascript"></script>
 <script src="{{url('plugin/bootstrap/bootstrap.min.js')}}" type="text/javascript"></script>
 <script src="{{url('plugin/jquery-easing/jquery.easing.js')}}" type="text/javascript"></script>
 <script src="{{url('plugin/owl-carousel/owl.carousel.js')}}" type="text/javascript"></script>

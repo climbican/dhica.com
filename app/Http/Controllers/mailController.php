@@ -29,12 +29,46 @@ class mailController extends Controller{
         return $active = ['home'=>'', 'about'=>'', 'services'=>'', 'guarantee'=>'', 'financing'=>'', 'windows'=>'', 'patio-doors'=>'', 'solar'=>'', 'blog'=>'', 'contact'=>''];
     }
 
+
+    public function miniMailForm(Request $request){
+
+        $this->validate($request,['name'=>'required|min:3|max:50',
+            'email'=>'required|min:10|max:75',
+            'message'=>'required|min:10|max:200']);
+
+        $contact = $request->all();
+
+        $name = $contact['name'];
+        $email = $contact['email'];
+        $phone = $contact['phone'] == '' ? '' : 'Phone Number: '.$contact['phone'];
+        $message = $contact['message'];
+
+        $mail_body = 'This email is from '.$name."\n".$phone."\n".'Email: '.$email."\n". $message;
+        $subject = 'Message from mini form';
+
+        // send email
+        //$recipient = "kelly@dhica.com"; //recipient
+        //testing
+        $recipient = "kelly@dhica.com";
+
+        $header = "From: ". $name . " <" . $email . ">\r\n"; //optional headerfields
+
+        if( mail($recipient, $subject, $mail_body, $header) ){
+            echo json_encode(['message'=>'Your message was submitted successfully', 'success'=>1]); exit();
+        }
+        else{
+            echo json_encode(['message'=>'There was an issue, please try later', 'success'=>0]); exit();
+        }
+
+    }
+
+
     public function sendTheEmail(Request $request){
 
-        $this->validate($request,['name'=>'required|max:255',
-            'email'=>'required|max:255',
+        $this->validate($request,['name'=>'required|min:3|max:35',
+            'email'=>'required|min:10|max:75',
             'g-recaptcha-response' => 'required|captcha',
-            'message'=>'required']);
+            'message'=>'required|min:10|max:1000']);
 
         $contact = $request->all();
 
