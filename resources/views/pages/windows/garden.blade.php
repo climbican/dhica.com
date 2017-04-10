@@ -103,4 +103,5 @@
             </div>
         </div><!--/.get-started-->
     </section><!--/#feature-->
+    @include('includes.scrollbox')
 @stop
