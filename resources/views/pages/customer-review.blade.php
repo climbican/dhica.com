@@ -44,5 +44,5 @@
             </form>
         </div>
     </section>
-
+    @include('includes.scrollbox')
 @endsection

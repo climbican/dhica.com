@@ -36,39 +36,51 @@
     }
 
     jQuery(document).ready(function($) {
+        //TODO: maybe test more the resize function, only problem is that the script will also need to check for the window already being open and close it on small size.
+        //window.addEventListener("resize", function () {
+        /**
+         * -------------------------------
+         * THIS CHECKS FOR OS TO BE MAC, WIN OR LINUX AND WINDOW SIZE GREATER THAN 1000 PX WIDE ON THE BROWSER.
+         */
+        if((checker.os.mac == "Macintosh" || checker.os.win == 'Windows' || checker.os.linux == 'Linux') && window.innerWidth > 1000){
 
-        if(!checkCookie('formActive')){
-            setCookie('formActive', true, 1);
-        }
+            if(!checkCookie('formActive')){
+                setCookie('formActive', true, 1);
+            }
 
-        $(function() {
-            // Set this variable with the desired height
-            var offsetPixels = 670;
+            $(function() {
+                // Set this variable with the desired height
+                var offsetPixels = 670;
 
-            $(window).scroll(function() {
+                $(window).scroll(function() {
 
-                if ($(window).scrollTop() > offsetPixels) {
-                    var cookieVal = getCookie('formActive');
+                    if ($(window).scrollTop() > offsetPixels) {
+                        var cookieVal = getCookie('formActive');
 
-                    if( cookieVal === "true"){
+                        if( cookieVal === "true"){
+                            $( ".scrollingBox" ).css({
+                                "position": "fixed",
+                                "bottom": "100px",
+                                "right": "5px",
+                                "background-color":"#fff",
+                                "visibility": "visible",
+                                "opacity":"1"
+                            });
+                        }
+                    } else {
                         $( ".scrollingBox" ).css({
                             "position": "fixed",
-                            "bottom": "100px",
-                            "right": "5px",
-                            "background-color":"#fff",
-                            "visibility": "visible",
-                            "opacity":"1"
+                            "bottom": "-500px",
+                            "opacity":"0"
                         });
                     }
-                } else {
-                    $( ".scrollingBox" ).css({
-                        "position": "fixed",
-                        "bottom": "-500px",
-                        "opacity":"0"
-                    });
-                }
+                });
             });
-        });
+        }
+        //});
+
+
+
 
 
     }); //end docuemtn ready
@@ -145,6 +157,7 @@
     }
 
 </style>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 
 <div class="scrollingBox"><!-- style="border:1px dashed darkblue;" -->
@@ -170,8 +183,9 @@
                 <label>Message *</label>
                 <textarea name="message" id="message" required="required" class="form-control" rows="8" minlength="10" maxlength="100"></textarea>
             </div>
+            <div class="g-recaptcha" data-sitekey="6LcU8B4TAAAAAN0yN5p72aA-RykDIcpEp7Cf9C55" style="transform:scale(0.7);-webkit-transform:scale(0.7);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
             <div class="form-group" style="margin-top:10px;">
-                <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit Message</button>
+                <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Send</button>
             </div>
         </form>
     </div>

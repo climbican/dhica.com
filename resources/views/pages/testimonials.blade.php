@@ -57,5 +57,5 @@
         @endif
         <!-- End customer review -->
     </section>
-
+    @include('includes.scrollbox')
 @stop

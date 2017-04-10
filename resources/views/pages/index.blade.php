@@ -520,5 +520,5 @@
         </div>
     </div><!--/.container-->
 </section><!--/#conatcat-info-->
-
+@include('includes.scrollbox')
 @stop

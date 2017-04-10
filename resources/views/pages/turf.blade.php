@@ -124,5 +124,5 @@
             </div><!--/.get-started-->
         </div><!--/.container-->
     </section><!--/#feature-->
-
+    @include('includes.scrollbox')
 @stop

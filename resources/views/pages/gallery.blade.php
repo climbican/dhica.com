@@ -295,5 +295,5 @@
         </div>
     </div><!--/.get-started-->
 </section>
-
+@include('includes.scrollbox')
     @stop

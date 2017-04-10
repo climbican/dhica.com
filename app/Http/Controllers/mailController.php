@@ -22,7 +22,7 @@ class mailController extends Controller{
 
     private function prefix(){
         //return 'http://localhost/dhica.com/public/';  //dev
-        return 'https://dhica.com/dhica.com/public/'; //production
+        return 'https://dhica.com/dhica.com/'; //production
     }
 
     private function page_active(){
@@ -34,6 +34,7 @@ class mailController extends Controller{
 
         $this->validate($request,['name'=>'required|min:3|max:50',
             'email'=>'required|min:10|max:75',
+            'g-recaptcha-response' => 'required|captcha',
             'message'=>'required|min:10|max:200']);
 
         $contact = $request->all();
@@ -107,5 +108,4 @@ class mailController extends Controller{
 
         return view('emails.emailConfirm', compact('name', 'pre','active', 'page_title', 'meta_description', 'canonical'));
     }
-
 }
